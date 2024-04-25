@@ -1,0 +1,152 @@
+
+
+.box{
+    background-image: url('https://i.pinimg.com/736x/af/eb/b6/afebb655369668445f242cd4bccc7c42.jpg');
+    background-color: #f8cfcf;
+    padding: 20px;
+    border: 7px solid lightcoral;
+    border-radius: 5px;
+    box-shadow: 0 10px 8px rgba(240, 192, 192, 0.1);
+    margin-bottom: 10px;
+}
+
+.box-heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    border: 5px solid rgb(250, 245, 245);
+    padding: 10px; 
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: #f5cfd5; 
+    color: #3a3535;
+}
+
+.box-paragraph{
+    font: 100;
+    font-size: 17px;
+    border: 2px solid rgb(250, 245, 245);
+    padding: 10px; 
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f5cfd5; 
+    color: #3a3535;
+    display: block;
+}
+
+.main_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px; 
+}
+
+.contact_header{
+    font-style: italic;
+    text-align: center;
+    padding: 20px; 
+}
+
+.hobbies{
+    background-image: url('https://i.pinimg.com/564x/44/60/fb/4460fbe46cacb8e73083fb5b15f94be4.jpg');
+    border: 9px solid lightcoral;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.works{
+    background-image: url('https://i.pinimg.com/564x/44/60/fb/4460fbe46cacb8e73083fb5b15f94be4.jpg');
+    border: 9px solid lightcoral;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+div.testimonial{
+    background-image: url('https://i.pinimg.com/564x/44/60/fb/4460fbe46cacb8e73083fb5b15f94be4.jpg');
+    border: 9px solid lightcoral;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.gallery{
+    background-image: url('https://i.pinimg.com/736x/af/eb/b6/afebb655369668445f242cd4bccc7c42.jpg');
+    background-color: lightcoral;
+}
+
+img{
+     border: 3px solid rgb(8, 8, 8); 
+     padding: 30px;
+     margin: 50px;
+     margin-top: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+ul.center{
+    display: inline-block; 
+    text-align: left; 
+}
+
+ol.center{
+    display: inline-block; 
+    text-align: left; 
+}
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+    margin: 0;
+}
+
+.email, .full-name, .subject, .age, .message, .submit{
+    border: 1px solid;
+    padding: 20px;
+}
+
+
+h2{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: grid;
+    width: 80%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #0c0a0a;
+    border-radius: 10px;
+    grid-gap: 10px;   
+    align-items: center;
+}
+
+@media (min-width: 426px){
+    .contact>form {
+        display: grid;
+        grid-template-areas:
+            "email full-name"
+            "subject age"
+            "message message"
+            "submit submit";
+    }
+}
+
+@media (max-width: 426px){
+    .contact>form{
+        display: grid;
+        grid-template-areas:
+            "email"
+            "full-name"
+            "subject"
+            "age"
+            "message"
+            "submit";
+    }
+}
+ 
