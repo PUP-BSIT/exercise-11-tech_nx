@@ -1,140 +1,113 @@
 body {
-   background-image: url("butterfly.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   list-style-position: inside;
-   display: grid;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   font-family: serif;
-   margin: 1px;
- }
- 
- div {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   margin: auto;
- }
- 
- .name {
-   text-align: center;
-   background-color: rgba(44, 94, 242, 0.679);
-   width: 600px;
-   padding: 10px;
- }
- 
- 
- h2 {
-   font-style: Italic;
-   display: grid;
-   text-align: center;
-   font-weight: 700;
-   margin-bottom: 20px;
-   background-color: rgba(0, 0, 255, 0.427);
- }
- 
- 
- .works,
- .hobbies,
- .comment {
-   border: 10px solid rgba(51, 113, 227, 0.686);
-   background-color: rgba(0, 174, 255, 0.586);
-   width: 500px;
-   gap: 5px;
-   padding: 15px;
- }
- 
- .images {
-   background: rgb(13, 168, 220);
-   justify-items: center;
-   display: flex;
-   flex-direction: row;
-   gap: 5px;
-   padding: 15px;
- }
- 
- img {
-   width: 200px;
-   height: 200px;
- }
- 
- .email,
- .fullname,
- .age,
- .subject {
-   border: 1px solid;
-   padding: 10px;
- }
- 
- .sendcopy,
- .message,
- .submit {
-   border: 1px solid;
-   padding: 10px;
- }
- 
- .container div {
-   display: grid;
-   border: 1px solid;
-   text-align: center;
-   background-color: aquamarine;
-   margin: 1px;
- }
- 
- .email {
-   grid-area: email;
- }
- 
- .fullname {
-   grid-area: fullname;
- }
- 
- .age {
-   grid-area: age;
- }
- 
- .subject {
-   grid-area: subject;
- }
- 
- .sendcopy {
-   grid-area: sendcopy;
- }
- 
- .message {
-   grid-area: message;
- }
- 
- .submit {
-   grid-area: submit;
- }
- 
- @media (min-width: 426px) {
-   .container > form { 
-     display: grid;
-     grid-template-rows: 
-     "email fullname"
-     "age subject"
-     "sendcopy message"
-     "submit";
-     
-   }
- }
- 
- @media (max-width: 425px) {
-   .container > form {
-     display: grid;
-     grid-template-areas: 
-     "email"
-     "fullname"
-     "age" 
-     "subject"
-     "sendcopy" 
-     "message"
-     "submit";
-   }
- }
- 
+  background-image: url("https://i.pinimg.com/236x/85/18/af/8518afcfc0fb5f08d6e4bce44a000b81.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style-position: inside;
+  display: grid;
+  min-height: 100vh;
+  font-family: serif;
+  margin: 1px;
+}
+
+.position {
+  flex-direction: column;
+  margin: auto;
+}
+
+.name {
+  text-align: center;
+  background-color: rgba(44, 94, 242, 0.679);
+  padding: 10px;
+}
+
+h2 {
+  font-style: Italic;
+  display: grid;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 255, 0.427);
+}
+
+.works,
+.hobbies,
+.comment {
+  border: 10px solid rgba(51, 113, 227, 0.686);
+  background-color: rgba(0, 174, 255, 0.586);
+  width: 350px;
+  gap: 5px;
+  padding: 7px;
+}
+
+.images {
+  background: rgb(159, 221, 242);
+  text-align: center;
+}
+
+.image-item {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto; 
+  max-width: 100px; 
+  margin: 5px; 
+}
+
+.email,
+.fullname,
+.age,
+.subject,
+.sendcopy {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container {
+  background-color: aquamarine;
+  margin: auto;
+  padding: 30px;
+}
+
+.email {
+  grid-area: email;
+}
+
+.fullname {
+  grid-area: fullname;
+}
+
+.age {
+  grid-area: age;
+}
+
+.subject {
+  grid-area: subject;
+}
+
+.sendcopy {
+  grid-area: sendcopy;
+}
+
+.message {
+  grid-area: message;
+}
+
+.submit {
+  grid-area: submit;
+  padding: 10px;
+  text-align: center;
+}
+
+
+@media (min-width: 426px) {
+  .container > form {
+    display: grid;
+    grid-template-areas:
+      "email fullname"
+      "age subject"
+      "sendcopy message"
+      "submit submit";
+  }
+}
