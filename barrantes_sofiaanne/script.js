@@ -1,13 +1,13 @@
-function validation() {
-    let name = document.getElementById("fname").value;
-    let comment = document.getElementById("comment").value;
+function comment_btn() {
+    let name = document.getElementById("fname");
+    let comment = document.getElementById("comment");
+    let button = document.getElementById("com-b");
 
-    if (name.trim().length > 0 && comment.trim().length > 0) {
-        document.getElementById("com-b").disabled = false;
+    if (name.value.length > 0 && comment.value.length > 0) {
+        button.disabled = false;
     } else {
-        document.getElementById("com-b").disabled = true;
+        button.disabled = true;
     }
 }
 
-document.getElementById("fname").addEventListener("input", validation);
-document.getElementById("comment").addEventListener("input", validation);
+document.getElementById("commentForm").addEventListener("input", comment_btn);
