@@ -15,7 +15,7 @@ body {
 .main-body {
   background-color: #e1afd1;
   padding: 10px;
-  max-width: 100%;
+  width: 100%;
   border: 3px dotted white;
 }
 
@@ -34,7 +34,7 @@ h1 {
 }
 
 .thoughts {
-  font-size: large;
+  font-size: x-large;
 }
 
 .main-body > h2 {
