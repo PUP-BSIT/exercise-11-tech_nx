@@ -33,8 +33,7 @@
 }
 
 .container {
-    display:block;
-    justify-content: space-between;
+    display: block;
     border: 5px solid rgb(252, 157, 172);
     background-color: #f8cfcf;
     border-radius: 10px;
@@ -43,9 +42,26 @@
 
 .section {
     margin-bottom: 10px;
-    max-width: 900px;
-    margin-left:50px;
-    text-align:left; 
+    margin-left:40px; 
+}
+
+#comment-form {
+    margin-top: 20px;
+}
+
+#comment-form input[type="text"],
+#comment-form textarea {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#comment-form button {
+    width: 50%;
+}
+
+#comment-form button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
 }
   
 .gallery {
@@ -147,9 +163,10 @@
             "message"
             "submit";
     }
-    .contact > form input[type="text"],
-    .contact > form textarea,
-    .contact > form button {
+    
+.contact > form input[type="text"],
+.contact > form textarea,
+.contact > form button {
         width: 100%;
     }
 }
