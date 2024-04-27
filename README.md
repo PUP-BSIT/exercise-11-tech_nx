@@ -4,3 +4,4 @@ https://barrantes-sofiaanne.netlify.app/
 https://mikaella-tayoto.netlify.app/
 https://alimasa-eliza.netlify.app
 https://pepito-alonajane.netlify.app/
+https://pasion-preciouskaye.netlify.app/
