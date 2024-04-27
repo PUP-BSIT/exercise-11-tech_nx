@@ -29,6 +29,11 @@ hr {
     margin-bottom: 10px;
 }
 
+.oc {
+   padding: 25px;
+   text-align: justify;
+}
+
 .content-container {
     display: flex;
     justify-content: space-around;
@@ -40,14 +45,14 @@ hr {
     margin-bottom: 20px;
 }
 
-.info, .files, .testi, .gallery, .head, .contacts, .goals, .remark, .thoughts {
+.info, .files, .testi, .gallery, .head, .contacts, .goals, .remarks, .thoughts {
     font-size: 15px;
     background-color: #FFDFDF;
     padding: 10px;
     text-align: center;
 }
 
-.info-li, .files-li, .testi-li, .goals-li{
+.info-li, .files-li, .testi-li, .goals-li {
     padding: 20px;
     display: inline-block;
     text-align: left;
@@ -57,7 +62,6 @@ hr {
     justify-content: center;
     text-align: center;
     width: 30%;
-    background-color: white;
     box-shadow: 8px 10px 10px #FFDFDF;
     margin-top: 15px;
     display: inline-block;
@@ -149,13 +153,13 @@ hr {
      }
 } 
 
-.comment {
-    grid-area: comment;
-    width: 200px;
+.lname {
+    grid-area: name;
     padding: 10px;
 }
 
-.lname {
-    grid-area: name;
+.comment {
+    grid-area: comment;
+    width: 200px;
     padding: 10px;
 }
