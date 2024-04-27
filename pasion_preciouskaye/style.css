@@ -107,7 +107,9 @@ img {
     grid-template-areas:
       "email fullname"
       "age subject"
-      "sendcopy message"
+      "sendcopy sendcopy"
+      "message message"
       "submit submit";
+    grid-gap: 10px;
   }
 }
