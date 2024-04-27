@@ -8,14 +8,14 @@ body {
     height: 100%;
     display: flex; 
     background-color: #ffd1dc; 
-    align-items: center; 
+    align-items:center; 
     padding: 20px;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .slide { 
-    max-width: 100%;
+    max-width: auto;
     margin-bottom: 20px; 
     padding: 20px;
     background-color: white;
@@ -70,11 +70,11 @@ a:hover {
 }
 
 .section-container {
-    border: 2px solid white; 
-    padding: 10px; 
-    border-radius: 10px; 
-    margin-bottom: 20px; 
-    width: 25%;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gallery {
@@ -174,4 +174,36 @@ a:hover {
     .section-container {
         width: auto;
     }
+}
+
+.com {
+    grid-area: com;
+}
+
+.fname {
+    grid-area: fname;
+}
+
+.com, .fname {
+    border:3px solid white;
+    padding: 20px;
+    text-align:start;
+}
+
+h2{
+    justify-self: center;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+    padding: 50px; 
+    box-sizing: border-box; 
+    width:auto;
+}
+
+.com-b{
+    text-align: center;
 }
