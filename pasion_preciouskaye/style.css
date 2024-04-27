@@ -16,8 +16,8 @@ body {
 
 .name {
   text-align: center;
-  background-color: rgba(44, 94, 242, 0.679);
-  padding: 10px;
+  background-color: rgb(124, 148, 222);
+  padding: 5px;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
   text-align: center;
   font-weight: 900;
   margin-bottom: 10px;
-  background-color: rgba(0, 0, 255, 0.427);
+  background-color: rgb(35, 104, 223);
 }
 
 .works,
