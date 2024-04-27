@@ -40,14 +40,14 @@ hr {
     margin-bottom: 20px;
 }
 
-.info, .files, .testi, .gallery, .head, .contacts {
+.info, .files, .testi, .gallery, .head, .contacts, .goals, .remark, .thoughts {
     font-size: 15px;
     background-color: #FFDFDF;
     padding: 10px;
     text-align: center;
 }
 
-.info-li, .files-li, .testi-li {
+.info-li, .files-li, .testi-li, .goals-li{
     padding: 20px;
     display: inline-block;
     text-align: left;
@@ -77,6 +77,13 @@ hr {
 
 .details {
     font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:
+    "email"
+    "fullname"
+    "subject"
+    "age"
+    "copy"
+    "submit";
 }
 
 .message {
@@ -118,13 +125,37 @@ hr {
     padding: 20px;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 425px) {
     .details > form {
         display: grid;
         grid-template-areas: 
-            "email fullname"
-            "subject age"
-            "copy copy"
-            "submit submit";
+        "email"
+        "fullname"
+        "subject"
+        "age"
+        "copy"
+        "submit";;
      }
 } 
+
+@media (min-width: 426px) and (max-width: 1440px) {
+    .details > form {
+        display: grid;
+        grid-template-areas: 
+        "email fullname"
+        "subject age"
+        "copy copy"
+        "submit submit";
+     }
+} 
+
+.comment {
+    grid-area: comment;
+    width: 200px;
+    padding: 10px;
+}
+
+.lname {
+    grid-area: name;
+    padding: 10px;
+}
