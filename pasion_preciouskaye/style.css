@@ -1,71 +1,115 @@
-body{
-   background-image: url('bluewallpaper.jpg');
-   list-style-position: inside;
-   display: grid;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   font-family: serif;
-   margin: 0;
+body {
+  background-image: url("https://i.pinimg.com/236x/85/18/af/8518afcfc0fb5f08d6e4bce44a000b81.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style-position: inside;
+  display: grid;
+  min-height: 100vh;
+  font-family: serif;
+  margin: 1px;
 }
 
-h2{
-   font-style: Italic;
-   display: grid;
-   text-align: center;
-   font-weight: 700;
-   margin-bottom: 20px;
+.position {
+  flex-direction: column;
+  margin: auto;
 }
 
-div.Works{ 
-   border: 10px solid rgb(0, 105, 175);
-}
- 
-div.images{
-   background: rgb(90, 158, 230);
+.name {
+  text-align: center;
+  background-color: rgb(124, 148, 222);
+  padding: 5px;
 }
 
-img{
-   width: 200px;
-   height: 200px;
+h2 {
+  font-style: Italic;
+  display: grid;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background-color: rgb(35, 104, 223);
+}
+
+.works,
+.hobbies,
+.comment {
+  border: 10px solid rgba(51, 113, 227, 0.686);
+  background-color: rgba(0, 174, 255, 0.586);
+  width: 350px;
+  gap: 5px;
+  padding: 7px;
+}
+
+.images {
+  background: rgb(159, 221, 242);
+  text-align: center;
+}
+
+.image-item {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto; 
+  max-width: 100px; 
+  margin: 5px; 
+}
+
+.email,
+.fullname,
+.age,
+.subject,
+.sendcopy {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container {
+  background-color: aquamarine;
+  margin: auto;
+  padding: 30px;
+}
+
+.email {
+  grid-area: email;
+}
+
+.fullname {
+  grid-area: fullname;
+}
+
+.age {
+  grid-area: age;
+}
+
+.subject {
+  grid-area: subject;
+}
+
+.sendcopy {
+  grid-area: sendcopy;
+}
+
+.message {
+  grid-area: message;
+}
+
+.submit {
+  grid-area: submit;
+  padding: 10px;
+  text-align: center;
 }
 
 
-.email, .fullname, .age, .subject {
-   border: 1px solid;
-   padding: 10px;
-    }
-
-  .message, .button {
-   border: 1px solid;
-   padding: 10px;
-      }
-
-  .container div {
-   display: grid;
-   border: 1px solid;
-   text-align: center;
-        }
-  
-  @media (min-width: 425px) {
- .contact {
- grid-template-areas:
- "email fullname" 
- "age  subject"
- "message"
- "submit";
-          }
-           }
-
- @media (max-width: 425px) {
-   .contact {
- grid-template-areas:
- "email" 
- "fullname" 
- "age" 
- "subject"
- "message"
- "submit";
-             }
-                }
-  
+@media (min-width: 426px) {
+  .container > form {
+    display: grid;
+    grid-template-areas:
+      "email fullname"
+      "age subject"
+      "sendcopy sendcopy"
+      "message message"
+      "submit submit";
+    grid-gap: 10px;
+  }
+}
