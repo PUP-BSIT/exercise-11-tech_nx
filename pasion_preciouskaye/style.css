@@ -33,7 +33,9 @@ h2 {
 .hobbies,
 .comment,
 .goals,
-.mcomment {
+.yourcomment,
+.mcomment,
+.thoughts {
   border: 10px solid rgba(51, 113, 227, 0.686);
   background-color: rgba(0, 174, 255, 0.586);
   width: 350px;
@@ -41,7 +43,19 @@ h2 {
   padding: 7px;
 }
 
+.yourcomment {
+  background-color: rgb(124, 201, 231);
+  margin: auto;
+  padding: 30px;
+}
+
 .goals {
+  background-color: rgb(124, 201, 231);
+  margin: auto;
+  padding: 30px;
+}
+
+.thoughts {
   background-color: rgb(124, 201, 231);
   margin: auto;
   padding: 30px;
