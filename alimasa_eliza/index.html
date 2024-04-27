@@ -76,41 +76,48 @@
             <li>Provide the needs of stray animals</li>
         </ul>
     </div>
+    <hr>
     <div>
+        <h2 class="remarks">Comment Section</h2>
         <hr>
-        <div>
-            <h2 class="remarks">Comments</h2>
-            <hr>
-            <form>
-            <div class="lname">
-                <label for="name">Name:</label>
-                <input type="text" 
-                id="name" 
-                name="name" 
-                oninput="verification()">
-            </div>
-            <div class="comment">
-                <label for="comment">Comment:</label>
-                <textarea id="comment" 
-                name="comment" 
-                rows="5" 
-                cols="50" 
-                oninput="verification()">
-                ---!!comment here!!---
-                </textarea>
-            </div>
-            <div class="submit">
-                <button type="button" 
-                id="save_button" 
-                onclick="verification()"
-                disabled>
-                Button
-                </button>
-            </div>
-            <script src="script.js"></script>
-            </form>
+        <div class="content">
+        <ul class="com-li">
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
         </div>
-    </div>
+        <hr>
+        <h2 class="comment_form">Comment Form</h2>
+        <hr>
+        <form>
+        <div class="lname">
+            <label for="name">Name:</label>
+            <input type="text" 
+            id="name" 
+            name="name" 
+            oninput="verification()">
+        </div>
+        <div class="comment">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" 
+            name="comment" 
+            rows="5" 
+            cols="50" 
+            oninput="verification()">
+            </textarea>
+        </div>
+        <div class="submit">
+            <button type="button" 
+            id="save_button" 
+            onclick="verification()"
+            disabled>
+            Button
+            </button>
+        </div>
+            <script src="script.js"></script>
+        </form>
+        </div>
     <hr>
     <div class="content">
         <h2 class="thoughts">Thoughts</h2>
